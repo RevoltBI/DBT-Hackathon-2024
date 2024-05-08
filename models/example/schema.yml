@@ -34,3 +34,14 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: PIZZA_CUSTOMERS_L1
+    description: "A starter dbt model"
+    config:
+      materialized: table
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
