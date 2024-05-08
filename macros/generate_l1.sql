@@ -1,7 +1,18 @@
 {% macro print_rows(schema, fmt) %}
 
+
     {% for row in schema["rows"] %}
-        {% if (schema["primary_key"]|length != 1) or (row["name"] != schema["primary_key"][0] ) %}
+        {% set filter_threshold = row["filter"]%}
+        {% if filter_threshold %}
+            {% set null_count = dbt_utils.get_single_value("SELECT COUNT("+ row["name"]+ ") from " + schema["table_name"] + " WHERE "+ row["name"]+ " IS NULL", 0.0) %}
+            {% set total_count = dbt_utils.get_single_value("SELECT COUNT("+ row["name"]+ ") from " + schema["table_name"], 1.0) %}
+            {% set should_stay = ((null_count|float)/(total_count|float)) <= filter_threshold %}
+        {% else %}
+            {% set should_stay = True %}
+        {% endif %}
+
+
+        {% if ( should_stay and (schema["primary_key"]|length != 1) or (row["name"] != schema["primary_key"][0] )) %}
             {{ fmt.format(row["name"]) }}
         {% endif %}
 
