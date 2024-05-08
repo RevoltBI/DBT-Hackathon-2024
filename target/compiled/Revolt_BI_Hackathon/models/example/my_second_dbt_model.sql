@@ -1,22 +1,5 @@
-/*
-    Welcome to your first dbt model!
-    Did you know that you can also configure models directly within SQL files?
-
-    This will override configurations stated in dbt_project.yml
-    Try changing "table" to "view" below
-*/
-
-
-
-with
-    source_data as (
-        
-        select 1 as id
-        union all
-        select null as id
-
-    )
+-- Use the `ref` function to select from other models
 
 select *
-from source_data
-where id is not null
+from "HACKATHON"."TEAM_08"."my_first_dbt_model"
+where id = 1

@@ -9,12 +9,17 @@
 {% set primary_key = ["ID"] %}
 {% set foreign_keys = [] %}
 
-{% set q = run_query('select 42 as id') %}
+{% set q = run_query('select * from HACKATHON.DATA_SAMPLE.PIZZA_ORDER_ITEMS' ) %}
+{% set q2 = run_query("select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS WHERE TABLE_CATALOG = 'HACKATHON.DATA_SAMPLE.PIZZA_ORDER_ITEMS'" ) %}
 
 with
     source_data as (
         
-        select {{q.print_table()}} as id
+        {% for e in q2 %}
+            {{ e["COLUMN_NAME"] }},
+        {% endfor %}
+        {{ "TNMFKODM" }}
+        select {{ q|length + 3 }} as id
         union all
         select null as id
 
