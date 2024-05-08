@@ -6698,3 +6698,431 @@ show terse objects in "HACKATHON"."TEAM_08" limit 10000
 [0m14:18:58.194840 [debug] [MainThread]: Command `dbt compile` succeeded at 14:18:58.193843 after 2.48 seconds
 [0m14:18:58.195838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A67D8BB740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A66C344350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A66D074B60>]}
 [0m14:18:58.195838 [debug] [MainThread]: Flushing usage events
+[0m14:32:02.579677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB3B075010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB3AE6CCE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB3B075400>]}
+
+
+============================== 14:32:02.583667 | 8473b9c2-c709-4725-b728-25c6cd29dc0b ==============================
+[0m14:32:02.583667 [info ] [MainThread]: Running with dbt=1.7.14
+[0m14:32:02.584317 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\MarkusSecundus\\Documents\\PRG\\DBT-Hackathon-2024', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\MarkusSecundus\\Documents\\PRG\\DBT-Hackathon-2024\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt compile', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:32:03.589859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8473b9c2-c709-4725-b728-25c6cd29dc0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB4BEFF2C0>]}
+[0m14:32:03.647704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8473b9c2-c709-4725-b728-25c6cd29dc0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB3AF46EA0>]}
+[0m14:32:03.649667 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m14:32:03.673635 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m14:32:03.856146 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:32:03.857143 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:32:03.863127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8473b9c2-c709-4725-b728-25c6cd29dc0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB4BE7CC50>]}
+[0m14:32:03.877061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8473b9c2-c709-4725-b728-25c6cd29dc0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB4C28C470>]}
+[0m14:32:03.878056 [info ] [MainThread]: Found 3 models, 6 tests, 0 sources, 0 exposures, 0 metrics, 767 macros, 0 groups, 0 semantic models
+[0m14:32:03.879054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8473b9c2-c709-4725-b728-25c6cd29dc0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB4BE3AFF0>]}
+[0m14:32:03.883074 [info ] [MainThread]: 
+[0m14:32:03.884039 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:32:03.886035 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON_TEAM_08'
+[0m14:32:03.906979 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_08"
+[0m14:32:03.906979 [debug] [ThreadPool]: On list_HACKATHON_TEAM_08: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_08"} */
+show terse objects in "HACKATHON"."TEAM_08" limit 10000
+[0m14:32:03.907977 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:32:04.690427 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m14:32:04.692452 [debug] [ThreadPool]: On list_HACKATHON_TEAM_08: Close
+[0m14:32:04.771788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8473b9c2-c709-4725-b728-25c6cd29dc0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB4C0049E0>]}
+[0m14:32:04.772799 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m14:32:04.773784 [info ] [MainThread]: 
+[0m14:32:04.777316 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:32:04.778315 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.Revolt_BI_Hackathon.my_first_dbt_model'
+[0m14:32:04.778315 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:32:04.786293 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.my_first_dbt_model"
+[0m14:32:04.788288 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_first_dbt_model (compile): 14:32:04.779334 => 14:32:04.787290
+[0m14:32:04.788288 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:32:04.789286 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_first_dbt_model (execute): 14:32:04.789286 => 14:32:04.789286
+[0m14:32:04.791281 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:32:04.792313 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.test_a
+[0m14:32:04.793274 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.my_first_dbt_model, now model.Revolt_BI_Hackathon.test_a)
+[0m14:32:04.794290 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.test_a
+[0m14:32:04.802282 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.test_a"
+[0m14:32:04.805244 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.test_a (compile): 14:32:04.794290 => 14:32:04.804247
+[0m14:32:04.806242 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.test_a
+[0m14:32:04.808235 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.test_a (execute): 14:32:04.807238 => 14:32:04.807238
+[0m14:32:04.810228 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.test_a
+[0m14:32:04.811226 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:32:04.813222 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.test_a, now model.Revolt_BI_Hackathon.my_second_dbt_model)
+[0m14:32:04.814227 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:32:04.818207 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.my_second_dbt_model"
+[0m14:32:04.820202 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_second_dbt_model (compile): 14:32:04.815219 => 14:32:04.819204
+[0m14:32:04.821200 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:32:04.822197 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_second_dbt_model (execute): 14:32:04.822197 => 14:32:04.822197
+[0m14:32:04.825189 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:32:04.826187 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:32:04.828213 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.my_second_dbt_model, now test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m14:32:04.828213 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:32:04.843169 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:32:04.844141 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 14:32:04.829209 => 14:32:04.844141
+[0m14:32:04.845137 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:32:04.846135 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 14:32:04.845137 => 14:32:04.845137
+[0m14:32:04.848162 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:32:04.848162 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:32:04.849125 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710, now test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321)
+[0m14:32:04.850155 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:32:04.857104 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m14:32:04.858103 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (compile): 14:32:04.850155 => 14:32:04.858103
+[0m14:32:04.859130 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:32:04.859130 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (execute): 14:32:04.859130 => 14:32:04.859130
+[0m14:32:04.861125 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:32:04.862090 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:32:04.863087 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321, now test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10)
+[0m14:32:04.863087 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:32:04.868074 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10"
+[0m14:32:04.870069 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10 (compile): 14:32:04.864084 => 14:32:04.869071
+[0m14:32:04.870069 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:32:04.871066 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10 (execute): 14:32:04.870069 => 14:32:04.870069
+[0m14:32:04.872063 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:32:04.873060 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:32:04.873060 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10, now test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c)
+[0m14:32:04.874089 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:32:04.881071 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c"
+[0m14:32:04.883035 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c (compile): 14:32:04.874089 => 14:32:04.883035
+[0m14:32:04.883035 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:32:04.884034 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c (execute): 14:32:04.884034 => 14:32:04.884034
+[0m14:32:04.886062 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:32:04.886062 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:32:04.887024 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c, now test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778)
+[0m14:32:04.888020 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:32:04.894033 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:32:04.896999 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778 (compile): 14:32:04.888020 => 14:32:04.896000
+[0m14:32:04.898027 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:32:04.899021 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778 (execute): 14:32:04.899021 => 14:32:04.899021
+[0m14:32:04.901018 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:32:04.901983 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:32:04.902980 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778, now test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493)
+[0m14:32:04.902980 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:32:04.907967 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:32:04.908964 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493 (compile): 14:32:04.903978 => 14:32:04.908964
+[0m14:32:04.909962 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:32:04.910959 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493 (execute): 14:32:04.910959 => 14:32:04.910959
+[0m14:32:04.911956 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:32:04.913952 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:32:04.913952 [debug] [MainThread]: Connection 'list_HACKATHON_TEAM_08' was properly closed.
+[0m14:32:04.914978 [debug] [MainThread]: Connection 'test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m14:32:04.916975 [debug] [MainThread]: Command end result
+[0m14:32:04.933898 [debug] [MainThread]: Command `dbt compile` succeeded at 14:32:04.932900 after 2.46 seconds
+[0m14:32:04.933898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB3AF478C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB4BBED370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB4BAFB470>]}
+[0m14:32:04.934895 [debug] [MainThread]: Flushing usage events
+[0m14:35:28.330221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018658039C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018658039EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186580387A0>]}
+
+
+============================== 14:35:28.335207 | 3bef7f4d-319a-4933-81c6-0cbf863ab34e ==============================
+[0m14:35:28.335207 [info ] [MainThread]: Running with dbt=1.7.14
+[0m14:35:28.337202 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\MarkusSecundus\\Documents\\PRG\\DBT-Hackathon-2024', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\MarkusSecundus\\Documents\\PRG\\DBT-Hackathon-2024\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt compile', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:35:29.368812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3bef7f4d-319a-4933-81c6-0cbf863ab34e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001865803B3B0>]}
+[0m14:35:29.428651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3bef7f4d-319a-4933-81c6-0cbf863ab34e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018668F75E80>]}
+[0m14:35:29.430615 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m14:35:29.453564 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m14:35:29.634104 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:35:29.635099 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:35:29.641088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3bef7f4d-319a-4933-81c6-0cbf863ab34e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018668E2B110>]}
+[0m14:35:29.654017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3bef7f4d-319a-4933-81c6-0cbf863ab34e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186692704A0>]}
+[0m14:35:29.655014 [info ] [MainThread]: Found 3 models, 6 tests, 0 sources, 0 exposures, 0 metrics, 767 macros, 0 groups, 0 semantic models
+[0m14:35:29.656011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3bef7f4d-319a-4933-81c6-0cbf863ab34e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018668E6F4A0>]}
+[0m14:35:29.659003 [info ] [MainThread]: 
+[0m14:35:29.661004 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:35:29.662992 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON_TEAM_08'
+[0m14:35:29.684933 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_08"
+[0m14:35:29.685933 [debug] [ThreadPool]: On list_HACKATHON_TEAM_08: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_08"} */
+show terse objects in "HACKATHON"."TEAM_08" limit 10000
+[0m14:35:29.686929 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:35:30.470982 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m14:35:30.472956 [debug] [ThreadPool]: On list_HACKATHON_TEAM_08: Close
+[0m14:35:30.565811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3bef7f4d-319a-4933-81c6-0cbf863ab34e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018668FAF680>]}
+[0m14:35:30.566808 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m14:35:30.567806 [info ] [MainThread]: 
+[0m14:35:30.572339 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:35:30.573338 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.Revolt_BI_Hackathon.my_first_dbt_model'
+[0m14:35:30.573338 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:35:30.581316 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.my_first_dbt_model"
+[0m14:35:30.583312 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_first_dbt_model (compile): 14:35:30.574335 => 14:35:30.582314
+[0m14:35:30.584309 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:35:30.586304 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_first_dbt_model (execute): 14:35:30.585306 => 14:35:30.585306
+[0m14:35:30.589296 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:35:30.589296 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.test_a
+[0m14:35:30.590826 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.my_first_dbt_model, now model.Revolt_BI_Hackathon.test_a)
+[0m14:35:30.591826 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.test_a
+[0m14:35:30.599804 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.test_a"
+[0m14:35:30.602801 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.test_a (compile): 14:35:30.591826 => 14:35:30.601799
+[0m14:35:30.603794 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.test_a
+[0m14:35:30.604791 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.test_a (execute): 14:35:30.604791 => 14:35:30.604791
+[0m14:35:30.606787 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.test_a
+[0m14:35:30.607785 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:35:30.608781 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.test_a, now model.Revolt_BI_Hackathon.my_second_dbt_model)
+[0m14:35:30.608781 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:35:30.612769 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.my_second_dbt_model"
+[0m14:35:30.614764 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_second_dbt_model (compile): 14:35:30.609777 => 14:35:30.613766
+[0m14:35:30.615761 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:35:30.616759 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_second_dbt_model (execute): 14:35:30.616759 => 14:35:30.616759
+[0m14:35:30.620756 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:35:30.622748 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:35:30.623741 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.my_second_dbt_model, now test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m14:35:30.623741 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:35:30.639697 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:35:30.641692 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 14:35:30.624737 => 14:35:30.640694
+[0m14:35:30.641692 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:35:30.642689 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 14:35:30.642689 => 14:35:30.642689
+[0m14:35:30.643686 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:35:30.644684 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:35:30.645713 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710, now test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321)
+[0m14:35:30.645713 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:35:30.652695 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m14:35:30.654659 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (compile): 14:35:30.646711 => 14:35:30.653693
+[0m14:35:30.655694 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:35:30.656653 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (execute): 14:35:30.656653 => 14:35:30.656653
+[0m14:35:30.658647 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:35:30.659679 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:35:30.660674 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321, now test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10)
+[0m14:35:30.661671 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:35:30.666657 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10"
+[0m14:35:30.668621 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10 (compile): 14:35:30.662636 => 14:35:30.667624
+[0m14:35:30.668621 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:35:30.669617 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10 (execute): 14:35:30.669617 => 14:35:30.669617
+[0m14:35:30.670644 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:35:30.671620 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:35:30.672641 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10, now test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c)
+[0m14:35:30.672641 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:35:30.677621 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c"
+[0m14:35:30.679593 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c (compile): 14:35:30.673638 => 14:35:30.678618
+[0m14:35:30.680609 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:35:30.681585 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c (execute): 14:35:30.680609 => 14:35:30.680609
+[0m14:35:30.682610 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:35:30.683611 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:35:30.684577 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c, now test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778)
+[0m14:35:30.685576 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:35:30.690595 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:35:30.692558 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778 (compile): 14:35:30.685576 => 14:35:30.691560
+[0m14:35:30.693554 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:35:30.694551 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778 (execute): 14:35:30.693554 => 14:35:30.693554
+[0m14:35:30.695549 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:35:30.696578 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:35:30.697575 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778, now test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493)
+[0m14:35:30.697575 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:35:30.702560 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:35:30.703549 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493 (compile): 14:35:30.698550 => 14:35:30.703549
+[0m14:35:30.704526 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:35:30.705523 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493 (execute): 14:35:30.705523 => 14:35:30.705523
+[0m14:35:30.706562 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:35:30.708513 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:35:30.708513 [debug] [MainThread]: Connection 'list_HACKATHON_TEAM_08' was properly closed.
+[0m14:35:30.709511 [debug] [MainThread]: Connection 'test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m14:35:30.711505 [debug] [MainThread]: Command end result
+[0m14:35:30.727267 [debug] [MainThread]: Command `dbt compile` succeeded at 14:35:30.727267 after 2.50 seconds
+[0m14:35:30.728264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018657E793D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001866A2A2750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001865510E1E0>]}
+[0m14:35:30.729264 [debug] [MainThread]: Flushing usage events
+[0m14:37:23.128088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024256BE8E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024256BE88C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024256BE9D30>]}
+
+
+============================== 14:37:23.132080 | 5fd236e5-b636-40ff-95c2-fe9bcc022320 ==============================
+[0m14:37:23.132080 [info ] [MainThread]: Running with dbt=1.7.14
+[0m14:37:23.133051 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\MarkusSecundus\\Documents\\PRG\\DBT-Hackathon-2024', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\MarkusSecundus\\Documents\\PRG\\DBT-Hackathon-2024\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt compile', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:37:24.089336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5fd236e5-b636-40ff-95c2-fe9bcc022320', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024267A5CD40>]}
+[0m14:37:24.147181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5fd236e5-b636-40ff-95c2-fe9bcc022320', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024267734B60>]}
+[0m14:37:24.148818 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m14:37:24.176750 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m14:37:24.402143 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:37:24.403141 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:37:24.409124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5fd236e5-b636-40ff-95c2-fe9bcc022320', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242671E0E30>]}
+[0m14:37:24.425082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5fd236e5-b636-40ff-95c2-fe9bcc022320', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024267E28F20>]}
+[0m14:37:24.426082 [info ] [MainThread]: Found 3 models, 6 tests, 0 sources, 0 exposures, 0 metrics, 767 macros, 0 groups, 0 semantic models
+[0m14:37:24.427077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5fd236e5-b636-40ff-95c2-fe9bcc022320', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024267AC5E80>]}
+[0m14:37:24.430071 [info ] [MainThread]: 
+[0m14:37:24.432311 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:37:24.434305 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON_TEAM_08'
+[0m14:37:24.454288 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_08"
+[0m14:37:24.456246 [debug] [ThreadPool]: On list_HACKATHON_TEAM_08: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_08"} */
+show terse objects in "HACKATHON"."TEAM_08" limit 10000
+[0m14:37:24.457248 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:37:25.294280 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m14:37:25.296274 [debug] [ThreadPool]: On list_HACKATHON_TEAM_08: Close
+[0m14:37:25.395238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5fd236e5-b636-40ff-95c2-fe9bcc022320', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024267E17AA0>]}
+[0m14:37:25.396236 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m14:37:25.397201 [info ] [MainThread]: 
+[0m14:37:25.400848 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:37:25.401849 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.Revolt_BI_Hackathon.my_first_dbt_model'
+[0m14:37:25.401849 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:37:25.409828 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.my_first_dbt_model"
+[0m14:37:25.410826 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_first_dbt_model (compile): 14:37:25.402846 => 14:37:25.410826
+[0m14:37:25.411823 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:37:25.413816 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_first_dbt_model (execute): 14:37:25.412819 => 14:37:25.412819
+[0m14:37:25.416811 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:37:25.417807 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.test_a
+[0m14:37:25.418646 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.my_first_dbt_model, now model.Revolt_BI_Hackathon.test_a)
+[0m14:37:25.419646 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.test_a
+[0m14:37:25.428621 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.test_a"
+[0m14:37:25.431615 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.test_a (compile): 14:37:25.419646 => 14:37:25.430623
+[0m14:37:25.432612 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.test_a
+[0m14:37:25.433608 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.test_a (execute): 14:37:25.433608 => 14:37:25.433608
+[0m14:37:25.435602 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.test_a
+[0m14:37:25.435602 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:37:25.436600 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.test_a, now model.Revolt_BI_Hackathon.my_second_dbt_model)
+[0m14:37:25.437598 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:37:25.443583 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.my_second_dbt_model"
+[0m14:37:25.445577 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_second_dbt_model (compile): 14:37:25.438595 => 14:37:25.445577
+[0m14:37:25.447601 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:37:25.448569 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_second_dbt_model (execute): 14:37:25.448569 => 14:37:25.448569
+[0m14:37:25.451592 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:37:25.452559 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:37:25.453556 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.my_second_dbt_model, now test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m14:37:25.454586 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:37:25.469544 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:37:25.471507 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 14:37:25.455583 => 14:37:25.471507
+[0m14:37:25.471507 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:37:25.472538 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 14:37:25.472538 => 14:37:25.472538
+[0m14:37:25.474533 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:37:25.475498 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:37:25.475498 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710, now test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321)
+[0m14:37:25.476495 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:37:25.483474 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m14:37:25.484471 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (compile): 14:37:25.476495 => 14:37:25.484471
+[0m14:37:25.485469 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:37:25.486469 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (execute): 14:37:25.486469 => 14:37:25.486469
+[0m14:37:25.488493 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:37:25.488493 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:37:25.489492 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321, now test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10)
+[0m14:37:25.490456 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:37:25.495442 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10"
+[0m14:37:25.496439 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10 (compile): 14:37:25.490456 => 14:37:25.496439
+[0m14:37:25.496439 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:37:25.497437 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10 (execute): 14:37:25.497437 => 14:37:25.497437
+[0m14:37:25.499432 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:37:25.499432 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:37:25.500429 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10, now test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c)
+[0m14:37:25.501429 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:37:25.508432 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c"
+[0m14:37:25.510404 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c (compile): 14:37:25.501429 => 14:37:25.509438
+[0m14:37:25.511432 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:37:25.512399 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c (execute): 14:37:25.511432 => 14:37:25.511432
+[0m14:37:25.514424 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:37:25.515390 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:37:25.516386 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c, now test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778)
+[0m14:37:25.516386 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:37:25.521373 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:37:25.523368 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778 (compile): 14:37:25.517383 => 14:37:25.522371
+[0m14:37:25.524366 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:37:25.525364 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778 (execute): 14:37:25.524366 => 14:37:25.524366
+[0m14:37:25.526361 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:37:25.526361 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:37:25.527357 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778, now test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493)
+[0m14:37:25.528355 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:37:25.533341 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:37:25.534339 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493 (compile): 14:37:25.528355 => 14:37:25.534339
+[0m14:37:25.536367 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:37:25.537332 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493 (execute): 14:37:25.536367 => 14:37:25.536367
+[0m14:37:25.538361 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:37:25.540324 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:37:25.540324 [debug] [MainThread]: Connection 'list_HACKATHON_TEAM_08' was properly closed.
+[0m14:37:25.541322 [debug] [MainThread]: Connection 'test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m14:37:25.544312 [debug] [MainThread]: Command end result
+[0m14:37:25.559274 [debug] [MainThread]: Command `dbt compile` succeeded at 14:37:25.559274 after 2.53 seconds
+[0m14:37:25.560302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024267AE4DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024266B5C6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002425690E780>]}
+[0m14:37:25.561268 [debug] [MainThread]: Flushing usage events
+[0m14:37:44.599330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1FCBC4DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1FCBC4C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1FCBC48F0>]}
+
+
+============================== 14:37:44.602322 | e2541753-c5ff-4a9a-a9d5-92d099f07ef4 ==============================
+[0m14:37:44.602322 [info ] [MainThread]: Running with dbt=1.7.14
+[0m14:37:44.603674 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\MarkusSecundus\\Documents\\PRG\\DBT-Hackathon-2024', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\MarkusSecundus\\Documents\\PRG\\DBT-Hackathon-2024\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt compile', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:37:45.542020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e2541753-c5ff-4a9a-a9d5-92d099f07ef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F18DAEDD90>]}
+[0m14:37:45.599865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e2541753-c5ff-4a9a-a9d5-92d099f07ef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1FF91B470>]}
+[0m14:37:45.601860 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m14:37:45.623828 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m14:37:45.805314 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:37:45.805314 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:37:45.811298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e2541753-c5ff-4a9a-a9d5-92d099f07ef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F18EED7A70>]}
+[0m14:37:45.825263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e2541753-c5ff-4a9a-a9d5-92d099f07ef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F18EEC5610>]}
+[0m14:37:45.826259 [info ] [MainThread]: Found 3 models, 6 tests, 0 sources, 0 exposures, 0 metrics, 767 macros, 0 groups, 0 semantic models
+[0m14:37:45.828254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e2541753-c5ff-4a9a-a9d5-92d099f07ef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F18EEB7F20>]}
+[0m14:37:45.831245 [info ] [MainThread]: 
+[0m14:37:45.833572 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:37:45.834569 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON_TEAM_08'
+[0m14:37:45.855515 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_08"
+[0m14:37:45.856512 [debug] [ThreadPool]: On list_HACKATHON_TEAM_08: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_08"} */
+show terse objects in "HACKATHON"."TEAM_08" limit 10000
+[0m14:37:45.857508 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:37:46.607103 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m14:37:46.609094 [debug] [ThreadPool]: On list_HACKATHON_TEAM_08: Close
+[0m14:37:46.678660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e2541753-c5ff-4a9a-a9d5-92d099f07ef4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F18EEC4950>]}
+[0m14:37:46.679626 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m14:37:46.680625 [info ] [MainThread]: 
+[0m14:37:46.685015 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:37:46.686012 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.Revolt_BI_Hackathon.my_first_dbt_model'
+[0m14:37:46.686012 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:37:46.693990 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.my_first_dbt_model"
+[0m14:37:46.694988 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_first_dbt_model (compile): 14:37:46.687028 => 14:37:46.694988
+[0m14:37:46.695985 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:37:46.696983 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_first_dbt_model (execute): 14:37:46.696983 => 14:37:46.696983
+[0m14:37:46.700015 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m14:37:46.700982 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.test_a
+[0m14:37:46.702968 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.my_first_dbt_model, now model.Revolt_BI_Hackathon.test_a)
+[0m14:37:46.703979 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.test_a
+[0m14:37:46.713969 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.test_a"
+[0m14:37:46.715935 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.test_a (compile): 14:37:46.704962 => 14:37:46.714967
+[0m14:37:46.715935 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.test_a
+[0m14:37:46.716930 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.test_a (execute): 14:37:46.716930 => 14:37:46.716930
+[0m14:37:46.717956 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.test_a
+[0m14:37:46.718958 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:37:46.721918 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.test_a, now model.Revolt_BI_Hackathon.my_second_dbt_model)
+[0m14:37:46.721918 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:37:46.727936 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.my_second_dbt_model"
+[0m14:37:46.729895 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_second_dbt_model (compile): 14:37:46.722914 => 14:37:46.729895
+[0m14:37:46.731889 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:37:46.732886 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_second_dbt_model (execute): 14:37:46.731889 => 14:37:46.731889
+[0m14:37:46.733886 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m14:37:46.734885 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:37:46.735882 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.my_second_dbt_model, now test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m14:37:46.738872 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:37:46.755825 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:37:46.756822 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 14:37:46.739870 => 14:37:46.756822
+[0m14:37:46.757820 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:37:46.758818 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 14:37:46.757820 => 14:37:46.757820
+[0m14:37:46.759815 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:37:46.760812 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:37:46.761839 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710, now test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321)
+[0m14:37:46.761839 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:37:46.768817 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m14:37:46.770785 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (compile): 14:37:46.762809 => 14:37:46.769789
+[0m14:37:46.770785 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:37:46.771785 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (execute): 14:37:46.771785 => 14:37:46.771785
+[0m14:37:46.772816 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m14:37:46.773810 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:37:46.774782 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321, now test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10)
+[0m14:37:46.775773 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:37:46.779796 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10"
+[0m14:37:46.781758 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10 (compile): 14:37:46.775773 => 14:37:46.780793
+[0m14:37:46.781758 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:37:46.782764 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10 (execute): 14:37:46.782764 => 14:37:46.782764
+[0m14:37:46.783778 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m14:37:46.784748 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:37:46.785788 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10, now test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c)
+[0m14:37:46.786768 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:37:46.792757 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c"
+[0m14:37:46.794721 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c (compile): 14:37:46.787748 => 14:37:46.794721
+[0m14:37:46.796716 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:37:46.797713 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c (execute): 14:37:46.797713 => 14:37:46.797713
+[0m14:37:46.799708 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m14:37:46.799708 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:37:46.800705 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c, now test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778)
+[0m14:37:46.801735 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:37:46.807720 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:37:46.809683 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778 (compile): 14:37:46.802700 => 14:37:46.808683
+[0m14:37:46.810707 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:37:46.811708 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778 (execute): 14:37:46.811708 => 14:37:46.811708
+[0m14:37:46.813670 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m14:37:46.813670 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:37:46.814667 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778, now test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493)
+[0m14:37:46.815665 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:37:46.821649 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:37:46.822646 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493 (compile): 14:37:46.816662 => 14:37:46.822646
+[0m14:37:46.823644 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:37:46.824641 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493 (execute): 14:37:46.823644 => 14:37:46.823644
+[0m14:37:46.825638 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:37:46.826641 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:37:46.827665 [debug] [MainThread]: Connection 'list_HACKATHON_TEAM_08' was properly closed.
+[0m14:37:46.827665 [debug] [MainThread]: Connection 'test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m14:37:46.829659 [debug] [MainThread]: Command end result
+[0m14:37:46.843879 [debug] [MainThread]: Command `dbt compile` succeeded at 14:37:46.843879 after 2.34 seconds
+[0m14:37:46.844875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1FF365B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F18EEEE690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F1FC9768A0>]}
+[0m14:37:46.844875 [debug] [MainThread]: Flushing usage events
