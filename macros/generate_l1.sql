@@ -1,6 +1,4 @@
 {% macro print_rows(schema, fmt) %}
-
-
     {% for row in schema["rows"] %}
         {% set filter_threshold = row["filter"]%}
         {% if filter_threshold %}
@@ -14,9 +12,7 @@
         {% if ( should_stay and ((schema["primary_key"]|length != 1) or (row["name"] != schema["primary_key"][0] ))) %}
             {{ fmt.format(row["name"]) }}
         {% endif %}
-
     {% endfor %}
-
 {% endmacro %}
 
 

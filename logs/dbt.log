@@ -20598,3 +20598,661 @@ where id = 1
 [0m16:22:05.870851 [debug] [MainThread]: Command `dbt run` succeeded at 16:22:05.869879 after 9.41 seconds
 [0m16:22:05.870851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001783A84B9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001783932A7E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001783940DBB0>]}
 [0m16:22:05.871874 [debug] [MainThread]: Flushing usage events
+[0m16:37:10.254429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DA6416000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DA6415E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DA6414B00>]}
+
+
+============================== 16:37:10.259414 | 3b723ce2-e0d6-4c69-b48e-f430d5b691f5 ==============================
+[0m16:37:10.259414 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:37:10.260395 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\MarkusSecundus\\Documents\\PRG\\DBT-Hackathon-2024', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\MarkusSecundus\\Documents\\PRG\\DBT-Hackathon-2024\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt test', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:37:11.347722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3b723ce2-e0d6-4c69-b48e-f430d5b691f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DA6417770>]}
+[0m16:37:11.419529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3b723ce2-e0d6-4c69-b48e-f430d5b691f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DA6417350>]}
+[0m16:37:11.421523 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:37:11.444462 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:37:11.717156 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:37:11.718154 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:37:11.724133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3b723ce2-e0d6-4c69-b48e-f430d5b691f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DB739E480>]}
+[0m16:37:11.739899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3b723ce2-e0d6-4c69-b48e-f430d5b691f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DB766D520>]}
+[0m16:37:11.740896 [info ] [MainThread]: Found 3 models, 6 tests, 0 sources, 0 exposures, 0 metrics, 768 macros, 0 groups, 0 semantic models
+[0m16:37:11.741896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3b723ce2-e0d6-4c69-b48e-f430d5b691f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DB7657F80>]}
+[0m16:37:11.744887 [info ] [MainThread]: 
+[0m16:37:11.745886 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:37:11.747879 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON_TEAM_08'
+[0m16:37:11.769821 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_08"
+[0m16:37:11.770819 [debug] [ThreadPool]: On list_HACKATHON_TEAM_08: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_08"} */
+show terse objects in "HACKATHON"."TEAM_08" limit 10000
+[0m16:37:11.773817 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:37:12.614216 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m16:37:12.616242 [debug] [ThreadPool]: On list_HACKATHON_TEAM_08: Close
+[0m16:37:12.701385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3b723ce2-e0d6-4c69-b48e-f430d5b691f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DB6FD6960>]}
+[0m16:37:12.702407 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m16:37:12.703379 [info ] [MainThread]: 
+[0m16:37:12.707373 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:37:12.708396 [info ] [Thread-1 (]: 1 of 6 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m16:37:12.710385 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m16:37:12.710385 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:37:12.739282 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:37:12.747264 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 16:37:12.711355 => 16:37:12.746263
+[0m16:37:12.752259 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:37:12.821063 [debug] [Thread-1 (]: Writing runtime sql for node "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:37:12.827047 [debug] [Thread-1 (]: Using snowflake connection "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:37:12.829041 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "HACKATHON"."TEAM_08"."my_first_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m16:37:12.830039 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:37:13.569375 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:37:13.575390 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 16:37:12.755239 => 16:37:13.575390
+[0m16:37:13.576364 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m16:37:13.651986 [info ] [Thread-1 (]: 1 of 6 PASS not_null_my_first_dbt_model_id ..................................... [[32mPASS[0m in 0.94s]
+[0m16:37:13.653000 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:37:13.654008 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m16:37:13.654979 [info ] [Thread-1 (]: 2 of 6 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m16:37:13.656973 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710, now test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778)
+[0m16:37:13.657970 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m16:37:13.662989 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:37:13.663986 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778 (compile): 16:37:13.657970 => 16:37:13.663986
+[0m16:37:13.664951 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m16:37:13.670062 [debug] [Thread-1 (]: Writing runtime sql for node "test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:37:13.672931 [debug] [Thread-1 (]: Using snowflake connection "test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:37:13.673928 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "HACKATHON"."TEAM_08"."my_second_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m16:37:13.674925 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:37:14.440356 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:37:14.442348 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778 (execute): 16:37:13.665949 => 16:37:14.442348
+[0m16:37:14.443317 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m16:37:14.529087 [info ] [Thread-1 (]: 2 of 6 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 0.87s]
+[0m16:37:14.531116 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m16:37:14.532080 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m16:37:14.532080 [info ] [Thread-1 (]: 3 of 6 START test not_null_test_a_id ........................................... [RUN]
+[0m16:37:14.534074 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778, now test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10)
+[0m16:37:14.535105 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m16:37:14.539092 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10"
+[0m16:37:14.541064 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10 (compile): 16:37:14.535105 => 16:37:14.541064
+[0m16:37:14.542051 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m16:37:14.547039 [debug] [Thread-1 (]: Writing runtime sql for node "test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10"
+[0m16:37:14.557710 [debug] [Thread-1 (]: Using snowflake connection "test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10"
+[0m16:37:14.558708 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "HACKATHON"."TEAM_08"."test_a"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m16:37:14.558708 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:37:15.260492 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:37:15.262451 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10 (execute): 16:37:14.543049 => 16:37:15.262451
+[0m16:37:15.263458 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10: Close
+[0m16:37:15.336383 [info ] [Thread-1 (]: 3 of 6 PASS not_null_test_a_id ................................................. [[32mPASS[0m in 0.80s]
+[0m16:37:15.337397 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m16:37:15.338378 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m16:37:15.339376 [info ] [Thread-1 (]: 4 of 6 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m16:37:15.340898 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10, now test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321)
+[0m16:37:15.340898 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m16:37:15.347911 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m16:37:15.349872 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (compile): 16:37:15.341895 => 16:37:15.348875
+[0m16:37:15.349872 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m16:37:15.354861 [debug] [Thread-1 (]: Writing runtime sql for node "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m16:37:15.364357 [debug] [Thread-1 (]: Using snowflake connection "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m16:37:15.366385 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "HACKATHON"."TEAM_08"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m16:37:15.367342 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:37:16.168070 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:37:16.170096 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (execute): 16:37:15.350887 => 16:37:16.169099
+[0m16:37:16.170096 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321: Close
+[0m16:37:16.244833 [info ] [Thread-1 (]: 4 of 6 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 0.90s]
+[0m16:37:16.246331 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m16:37:16.247329 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:37:16.248326 [info ] [Thread-1 (]: 5 of 6 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m16:37:16.249324 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321, now test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493)
+[0m16:37:16.250356 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:37:16.257301 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:37:16.261293 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493 (compile): 16:37:16.251350 => 16:37:16.260308
+[0m16:37:16.262287 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:37:16.266284 [debug] [Thread-1 (]: Writing runtime sql for node "test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:37:16.270267 [debug] [Thread-1 (]: Using snowflake connection "test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:37:16.274289 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "HACKATHON"."TEAM_08"."my_second_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m16:37:16.275285 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:37:16.981680 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:37:16.983706 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493 (execute): 16:37:16.262287 => 16:37:16.983706
+[0m16:37:16.984707 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m16:37:17.058553 [info ] [Thread-1 (]: 5 of 6 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 0.81s]
+[0m16:37:17.059976 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:37:17.059976 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m16:37:17.061002 [info ] [Thread-1 (]: 6 of 6 START test unique_test_a_id ............................................. [RUN]
+[0m16:37:17.062965 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493, now test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c)
+[0m16:37:17.062965 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m16:37:17.067988 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c"
+[0m16:37:17.070946 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c (compile): 16:37:17.063962 => 16:37:17.070006
+[0m16:37:17.071944 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m16:37:17.078965 [debug] [Thread-1 (]: Writing runtime sql for node "test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c"
+[0m16:37:17.081057 [debug] [Thread-1 (]: Using snowflake connection "test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c"
+[0m16:37:17.083367 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "HACKATHON"."TEAM_08"."test_a"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m16:37:17.084371 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:37:17.701937 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:37:17.704925 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c (execute): 16:37:17.071944 => 16:37:17.704925
+[0m16:37:17.705922 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c: Close
+[0m16:37:17.782367 [info ] [Thread-1 (]: 6 of 6 PASS unique_test_a_id ................................................... [[32mPASS[0m in 0.72s]
+[0m16:37:17.784180 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m16:37:17.786176 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:37:17.786176 [debug] [MainThread]: Connection 'list_HACKATHON_TEAM_08' was properly closed.
+[0m16:37:17.787172 [debug] [MainThread]: Connection 'test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c' was properly closed.
+[0m16:37:17.788178 [info ] [MainThread]: 
+[0m16:37:17.789166 [info ] [MainThread]: Finished running 6 tests in 0 hours 0 minutes and 6.04 seconds (6.04s).
+[0m16:37:17.792159 [debug] [MainThread]: Command end result
+[0m16:37:17.812106 [info ] [MainThread]: 
+[0m16:37:17.813105 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:37:17.815097 [info ] [MainThread]: 
+[0m16:37:17.816096 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m16:37:17.821122 [debug] [MainThread]: Command `dbt test` succeeded at 16:37:17.821122 after 7.71 seconds
+[0m16:37:17.822080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DA61F4EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DB870EBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DB4D68830>]}
+[0m16:37:17.822080 [debug] [MainThread]: Flushing usage events
+[0m16:38:21.317989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296AE7305C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296AE732BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296AE731580>]}
+
+
+============================== 16:38:21.321978 | 151d74a5-d90d-4d8b-af8b-acefdac2b8e9 ==============================
+[0m16:38:21.321978 [info ] [MainThread]: Running with dbt=1.7.14
+[0m16:38:21.322976 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'c:\\Users\\MarkusSecundus\\Documents\\PRG\\DBT-Hackathon-2024', 'debug': 'False', 'warn_error': 'None', 'log_path': 'c:\\Users\\MarkusSecundus\\Documents\\PRG\\DBT-Hackathon-2024\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:38:22.383230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '151d74a5-d90d-4d8b-af8b-acefdac2b8e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296BF3C84A0>]}
+[0m16:38:22.445045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '151d74a5-d90d-4d8b-af8b-acefdac2b8e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296BF586B70>]}
+[0m16:38:22.447079 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m16:38:22.470996 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m16:38:22.666442 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:38:22.667440 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:38:22.673424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '151d74a5-d90d-4d8b-af8b-acefdac2b8e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296BF2F7E60>]}
+[0m16:38:22.688382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '151d74a5-d90d-4d8b-af8b-acefdac2b8e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296BF961BE0>]}
+[0m16:38:22.690377 [info ] [MainThread]: Found 3 models, 6 tests, 0 sources, 0 exposures, 0 metrics, 768 macros, 0 groups, 0 semantic models
+[0m16:38:22.691378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '151d74a5-d90d-4d8b-af8b-acefdac2b8e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296BF585490>]}
+[0m16:38:22.693401 [info ] [MainThread]: 
+[0m16:38:22.695433 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:38:22.697360 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON_TEAM_08'
+[0m16:38:22.714345 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON_TEAM_08"
+[0m16:38:22.715343 [debug] [ThreadPool]: On list_HACKATHON_TEAM_08: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON_TEAM_08"} */
+show terse objects in "HACKATHON"."TEAM_08" limit 10000
+[0m16:38:22.716340 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:38:23.496114 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m16:38:23.498104 [debug] [ThreadPool]: On list_HACKATHON_TEAM_08: Close
+[0m16:38:23.572369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '151d74a5-d90d-4d8b-af8b-acefdac2b8e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296BF51FBC0>]}
+[0m16:38:23.573400 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m16:38:23.573400 [info ] [MainThread]: 
+[0m16:38:23.578353 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.test_a
+[0m16:38:23.579332 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.Revolt_BI_Hackathon.test_a'
+[0m16:38:23.580331 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.test_a
+[0m16:38:23.610250 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:23.613246 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE CUSTOMER_STATUS IS NULL
+[0m16:38:23.615244 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:38:24.786003 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:38:24.788033 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:24.789030 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:24.861676 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:24.864699 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:24.864699 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE CUSTOMER_TYPE IS NULL
+[0m16:38:24.934558 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:24.936547 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:24.936547 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:25.003325 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.005372 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.006283 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE CUSTOMER_CREATED IS NULL
+[0m16:38:25.060601 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.062612 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.063610 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:25.122532 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.124523 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.125521 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE FIRST_NAME_HASH IS NULL
+[0m16:38:25.169953 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.171978 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.172957 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:25.218445 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.220438 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.221444 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE SEX IS NULL
+[0m16:38:25.295979 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.298971 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.299969 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:25.357610 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.359602 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.359602 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE RECENCY_DAYS IS NULL
+[0m16:38:25.416092 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.418121 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.419121 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:25.465931 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.467930 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.468927 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE TOTAL_ORDERED_AMOUNT IS NULL
+[0m16:38:25.513369 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.515364 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.515364 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:25.562685 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.564619 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.565616 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE CUSTOMER_STATUS IS NULL
+[0m16:38:25.612364 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.613361 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.614363 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:25.662623 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.664649 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.665614 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE CUSTOMER_TYPE IS NULL
+[0m16:38:25.723285 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.725279 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.725279 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:25.774999 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.776994 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.777963 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE CUSTOMER_CREATED IS NULL
+[0m16:38:25.874273 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.876267 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.876267 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:25.921685 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.923678 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.923678 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE FIRST_NAME_HASH IS NULL
+[0m16:38:25.979685 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:25.981679 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:25.982680 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:26.032886 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:26.034879 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:26.034879 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE SEX IS NULL
+[0m16:38:26.080539 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:26.082568 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:26.082568 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:26.130670 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:26.132664 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:26.132664 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE RECENCY_DAYS IS NULL
+[0m16:38:26.195580 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:26.198571 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:26.199568 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:26.248001 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:26.249993 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:26.251000 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS WHERE TOTAL_ORDERED_AMOUNT IS NULL
+[0m16:38:26.332168 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:26.334191 [debug] [Thread-1 (]: Using snowflake connection "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:26.334191 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "model.Revolt_BI_Hackathon.test_a"} */
+SELECT COUNT(*) from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+[0m16:38:26.384951 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:38:26.386942 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.test_a"
+[0m16:38:26.387909 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.test_a (compile): 16:38:23.581331 => 16:38:26.386942
+[0m16:38:26.387909 [debug] [Thread-1 (]: Began executing node model.Revolt_BI_Hackathon.test_a
+[0m16:38:26.388908 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.test_a (execute): 16:38:26.388908 => 16:38:26.388908
+[0m16:38:26.389904 [debug] [Thread-1 (]: On model.Revolt_BI_Hackathon.test_a: Close
+[0m16:38:26.465709 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.test_a
+[0m16:38:26.466706 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m16:38:26.467705 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.test_a, now test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10)
+[0m16:38:26.467705 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m16:38:26.482664 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10"
+[0m16:38:26.483661 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10 (compile): 16:38:26.468701 => 16:38:26.483661
+[0m16:38:26.483661 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m16:38:26.484659 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10 (execute): 16:38:26.484659 => 16:38:26.484659
+[0m16:38:26.486655 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10
+[0m16:38:26.487651 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m16:38:26.488649 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_test_a_id.40b0566d10, now test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c)
+[0m16:38:26.489645 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m16:38:26.497658 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c"
+[0m16:38:26.498621 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c (compile): 16:38:26.489645 => 16:38:26.498621
+[0m16:38:26.499622 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m16:38:26.499622 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c (execute): 16:38:26.499622 => 16:38:26.499622
+[0m16:38:26.501645 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c
+[0m16:38:26.502610 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:38:26.503609 [debug] [MainThread]: Connection 'list_HACKATHON_TEAM_08' was properly closed.
+[0m16:38:26.503609 [debug] [MainThread]: Connection 'test.Revolt_BI_Hackathon.unique_test_a_id.1d0c51e33c' was properly closed.
+[0m16:38:26.504606 [debug] [MainThread]: Command end result
+[0m16:38:26.519359 [debug] [MainThread]: Excluded node 'not_null_test_a_id' from results
+[0m16:38:26.520357 [debug] [MainThread]: Excluded node 'unique_test_a_id' from results
+[0m16:38:26.521354 [info ] [MainThread]: Compiled node 'test_a' is:
+
+
+
+    
+
+    
+
+    
+SELECT DATA_SAMPLE_PIZZA_CUSTOMERS_id, 
+    
+
+
+    
+        
+        
+            
+        
+
+        
+            ID,
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+            CUSTOMER_STATUS,
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+            CUSTOMER_TYPE,
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+            CUSTOMER_CREATED,
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+            FIRST_NAME_HASH,
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+            SEX,
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+
+    
+
+ 
+from (
+    SELECT 
+
+    
+    
+        CONCAT(
+        
+            ID ,
+        
+            SEX 
+        
+        )
+    
+    as DATA_SAMPLE_PIZZA_CUSTOMERS_id,
+    
+    
+    
+
+
+    
+        
+        
+            
+        
+
+        
+            ID as ID,
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+            CUSTOMER_STATUS as CUSTOMER_STATUS,
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+            CUSTOMER_TYPE as CUSTOMER_TYPE,
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+            CUSTOMER_CREATED as CUSTOMER_CREATED,
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+            FIRST_NAME_HASH as FIRST_NAME_HASH,
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+            SEX as SEX,
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+
+    
+        
+        
+            
+            
+            
+        
+
+        
+
+    
+
+
+
+    from HACKATHON.DATA_SAMPLE.PIZZA_CUSTOMERS
+)
+
+
+[0m16:38:26.525344 [debug] [MainThread]: Command `cli compile` succeeded at 16:38:26.524347 after 5.32 seconds
+[0m16:38:26.526341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296AE2AED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296AE479A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296AE5ED280>]}
+[0m16:38:26.527338 [debug] [MainThread]: Flushing usage events
