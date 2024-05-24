@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.sql": "jinja-sql"
+    },
+    "python.envFile": "${workspaceFolder}/.env.local",
+    "dbt.queryLimit": 500,
+    "editor.formatOnSave": false
+}
